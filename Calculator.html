@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Calculator</title>
+<style>
+		body, html{
+			height: 100%;
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+			}
+		* {
+			box-sizing: border-box;
+			}
+	
+		body{
+			background-image: url("back.jpg");
+			
+		  height: 100%;
+
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		}
+
+		.bg-text {
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+		  color: white;
+		  font-weight: bold;
+		  border: 3px solid #f1f1f1;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  z-index: 2;
+		  width: 80%;
+		  padding: 20px;
+		  text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <div id="calculator">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<center>
+        <input type="text" id="display" readonly>
+        <div id="buttons">
+            <button onclick="clearDisplay()">CLEAR</button>
+			<br>
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="appendOperator('/')">/</button>
+			<br>
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button onclick="appendOperator('*')">*</button>
+			<br>
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="appendOperator('-')">-</button>
+			<br>
+            <button onclick="appendOperator('.')">.</button>
+			<button onclick="appendNumber(0)">0</button>
+			<button onclick="appendOperator('+')">+</button>
+            <button onclick="calculateResult()">=</button>
+			<br>
+			<br>
+	<br>
+
+			<a href="Tools.html" class="w3-button w3-blue">Back to Tools</a>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
